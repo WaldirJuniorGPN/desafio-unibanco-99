@@ -14,15 +14,9 @@ public class Transacao {
 
     private final BigDecimal valor;
     private final OffsetDateTime dataHora;
-    private final ArrayList<Transacao> transacaos = new ArrayList<>();
 
     public Transacao(BigDecimal valor, OffsetDateTime dataHora) {
         this.valor = valor;
         this.dataHora = dataHora;
-        this.salvarTransacao(this);
-    }
-
-    private void salvarTransacao(Transacao transacao) {
-        this.transacaos.add(transacao);
     }
 }

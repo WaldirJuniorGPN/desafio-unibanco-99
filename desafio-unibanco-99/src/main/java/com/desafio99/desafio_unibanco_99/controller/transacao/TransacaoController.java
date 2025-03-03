@@ -2,7 +2,7 @@ package com.desafio99.desafio_unibanco_99.controller.transacao;
 
 import com.desafio99.desafio_unibanco_99.controller.transacao.dto.request.TransacaoRequest;
 import com.desafio99.desafio_unibanco_99.controller.transacao.dto.response.TransacaoResponse;
-import com.desafio99.desafio_unibanco_99.service.transacaoService;
+import com.desafio99.desafio_unibanco_99.service.TransacaoService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 public class TransacaoController {
 
-    private final transacaoService service;
+    private final TransacaoService service;
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
